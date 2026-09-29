@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">Davide Fernando Bragalone</title>
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F3F0EE">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+  <!-- Montserrat only for the ToGæther "æ" portrait glyph, subset to that one character -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&text=%C3%A6&display=swap">
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script type="module" src="./assets/js/main.js"></script>
+  <!-- GoatCounter: cookieless analytics; elements with data-goatcounter-click are counted as click events -->
+  <script data-goatcounter="https://arcot.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <!-- Icon sprite: each icon is defined once and referenced with <use> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="3"/>
+      <path d="M4 7l8 6 8-6"/>
+    </symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.4V21h-4v-5.9c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14M13 6l6 6-6 6"/>
+    </symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 16L16 8M9 8h7v7"/>
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <path d="M4 8h16M4 16h16"/>
+    </symbol>
+    <!-- Project portrait icons: thinner stroke than UI icons since they're drawn large -->
+    <symbol id="i-ids" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/>
+      <path d="M7.5 12h2.2l1.3-2.5 2 5 1.3-2.5h2.2"/>
+    </symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 4v16h16"/>
+      <path d="M7 7l4 5 3-2 5 6"/>
+      <path d="M19 12.5V16h-3.5"/>
+    </symbol>
+    <symbol id="i-sync-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="9" cy="6" rx="6" ry="2.5"/>
+      <path d="M3 6v12c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5V6"/>
+      <path d="M3 12c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5"/>
+      <path d="M17 9h4M19.5 7.5L21 9l-1.5 1.5M21 15h-4M18.5 13.5L17 15l1.5 1.5"/>
+    </symbol>
+    <symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2.5"/>
+      <circle cx="8.5" cy="10.5" r="2"/>
+      <path d="M5.5 16c.6-1.5 1.7-2.2 3-2.2s2.4.7 3 2.2M14 10h4M14 13h4"/>
+    </symbol>
+    <symbol id="i-locked-shields" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 4.48C8 2.26 16 2.26 20 4.48V12.25C20 16.32 15.52 19.65 12 21.5C8.48 19.65 4 16.32 4 12.25Z"/>
+      <path d="M7 7.53C9.5 6.14 14.5 6.14 17 7.53V12.4C17 14.95 14.2 17.04 12 18.2C9.8 17.04 7 14.95 7 12.4Z"/>
+      <path d="M9.9 10.4C10.95 9.8 13.05 9.8 14.1 10.4V12.5C14.1 13.6 12.92 14.5 12 15C11.08 14.5 9.9 13.6 9.9 12.5Z"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- Floating nav pill -->
+  <header class="site-header">
+    <div class="nav-pill">
+      <a class="monogram" href="#top" data-i18n-attr="aria-label:nav.home" aria-label="Back to top">
+        <span data-i18n="nav.monogram">DB</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" data-i18n-attr="aria-label:nav.label" aria-label="Sections">
+        <ul>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+          <li><a href="#work" data-i18n="nav.work">Work</a></li>
+          <li><a href="#words" data-i18n="nav.words">Words</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-end">
+        <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Language">
+          <button class="lang-btn" type="button" data-lang="en" data-goatcounter-click="lang-en" aria-pressed="true" lang="en">EN</button>
+          <button class="lang-btn" type="button" data-lang="it" data-goatcounter-click="lang-it" aria-pressed="false" lang="it">IT</button>
+        </div>
+        <button class="circle-btn menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n-attr="aria-label:nav.menu" aria-label="Menu">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">CyberSecurity Specialist · Networking · Automation</p>
+          <h1 class="hero-name" id="hero-name" data-i18n="hero.name">Davide Fernando Bragalone</h1>
+          <p class="hero-tagline" data-i18n="hero.tagline">Two decades in networking and security, and still curious about what comes next.</p>
+          <ul class="social-links">
+            <li>
+              <a class="circle-btn" href="mailto:df.bragalone@gmail.com" data-goatcounter-click="contact-email" data-i18n-attr="aria-label:links.email" aria-label="Email">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-email"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="circle-btn" href="https://www.linkedin.com/in/davide-fernando-bragalone-40a007103/" rel="me" data-goatcounter-click="contact-linkedin" data-i18n-attr="aria-label:links.linkedin" aria-label="LinkedIn">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Orbital arc around the portrait -->
+          <svg class="orbit orbit--hero" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+            <path pathLength="1" d="M28 236 C 14 120, 110 22, 214 26 C 318 30, 392 118, 380 214 C 370 300, 300 372, 206 376"/>
+          </svg>
+          <div class="portrait-wrap">
+            <!-- Swap the monogram for <img src="…" alt="…"> to show a photo; it is cropped to the circle -->
+            <div class="portrait portrait--hero">
+              <span class="portrait-mono" data-i18n="nav.monogram" aria-hidden="true">DB</span>
+            </div>
+            <a class="satellite" href="#about" data-i18n-attr="aria-label:hero.cta" aria-label="Discover">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <p class="ghost" aria-hidden="true" data-i18n="about.title">About</p>
+      <div class="container about-grid">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow" data-i18n="about.eyebrow">Who I am</p>
+          <h2 id="about-title" data-i18n="about.title">About</h2>
+        </header>
+        <div class="about-body" data-reveal>
+          <p class="about-lead" data-i18n="about.p1">Ask my colleagues and they'll likely tell you the same thing: if you're stuck, call Davide. I'm a cybersecurity specialist based in Rome, and I've built my career on troubleshooting complex problems and designing systems that don't create them.</p>
+          <p data-i18n="about.p2">I'm restlessly curious. Once I'm confident with something, I move on to something new to master, roughly every two or three years. Security and networking stay at the center while the tools and stacks around them change. At the moment that means redesigning how our SOC detects threats and triages alerts.</p>
+          <p data-i18n="about.p3">I love passing knowledge on, too. I coach people at work and teach students in my area, helping them build skills around their passions and stay in school. And when I log off, it's usually to log back in: online multiplayer games, always on a team.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career & certifications: horizontal timeline on a shared year axis -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="panel">
+          <header class="section-head" data-reveal>
+            <p class="eyebrow" data-i18n="exp.eyebrow">Path</p>
+            <h2 id="experience-title" data-i18n="exp.title">Career &amp; Certifications</h2>
+          </header>
+
+          <!-- --from is the first year on the axis, --years its length. Each stop spans --start → --end; each cert sits at --at. -->
+          <div class="htl" role="region" tabindex="0" data-i18n-attr="aria-label:exp.title" aria-label="Career &amp; Certifications">
+            <div class="htl-track" style="--from: 2016; --years: 12">
+              <h3 class="sr-only" data-i18n="exp.lane.career">Career moves</h3>
+              <ol class="htl-career" data-stagger>
+                <li class="htl-stop" style="--start: 2016; --end: 2020" data-reveal>
+                  <p class="htl-dates"><time datetime="2016-06">2016</time> – <time datetime="2020-10">2020</time></p>
+                  <p class="htl-role" data-i18n="exp.1.role">Senior Technical Support Engineer</p>
+                  <p class="htl-org" data-i18n="exp.1.org">Red Hat · Brno</p>
+                  <p class="htl-note" data-i18n="exp.1.note">Linux networking-stack support, working with developers on fixes for customers.</p>
+                </li>
+                <li class="htl-stop" style="--start: 2020; --end: 2024" data-reveal>
+                  <p class="htl-dates"><time datetime="2020-10">2020</time> – <time datetime="2024-09">2024</time></p>
+                  <p class="htl-role" data-i18n="exp.2.role">Senior Security Infrastructure Ops</p>
+                  <p class="htl-org" data-i18n="exp.2.org">Red Hat · Remote</p>
+                  <p class="htl-note" data-i18n="exp.2.note">Led SOC operations and IDS design; ran Linux infrastructure as code with Ansible.</p>
+                </li>
+                <li class="htl-stop" style="--start: 2024; --end: 2026" data-reveal>
+                  <p class="htl-dates"><time datetime="2024-09">2024</time> – <time datetime="2026-04">2026</time></p>
+                  <p class="htl-role" data-i18n="exp.3.role">Senior Information Security Analyst</p>
+                  <p class="htl-org" data-i18n="exp.3.org">Red Hat · Remote</p>
+                  <p class="htl-note" data-i18n="exp.3.note">Incident handling and automated threat detection.</p>
+                </li>
+                <li class="htl-stop htl-stop--now" style="--start: 2026; --end: 2028" data-reveal>
+                  <p class="htl-dates"><time datetime="2026-04">2026</time> – <span data-i18n="exp.present">Present</span></p>
+                  <p class="htl-role" data-i18n="exp.4.role">CyberSecurity Specialist</p>
+                  <p class="htl-org" data-i18n="exp.4.org">IBM · Remote</p>
+                  <p class="htl-note" data-i18n="exp.4.note">Incident response and remediation across apps and infrastructure.</p>
+                </li>
+              </ol>
+
+              <div class="htl-axis" aria-hidden="true"></div>
+
+              <h3 class="sr-only" data-i18n="exp.lane.certs">Selected certifications · full list on LinkedIn</h3>
+              <ol class="htl-certs" data-stagger>
+                <li class="htl-cert" style="--at: 2016.25" data-reveal>
+                  <p class="htl-dates"><time datetime="2016-04">2016</time></p>
+                  <p class="htl-cert-name" data-i18n="cert.1.name">CCNA Routing &amp; Switching</p>
+                  <p class="htl-org" data-i18n="cert.1.issuer">Cisco</p>
+                </li>
+                <li class="htl-cert" style="--at: 2016.92" data-reveal>
+                  <p class="htl-dates"><time datetime="2016-12">2016</time></p>
+                  <p class="htl-cert-name" data-i18n="cert.2.name">Red Hat Certified Engineer (RHCE)</p>
+                  <p class="htl-org" data-i18n="cert.2.issuer">Red Hat</p>
+                </li>
+                <li class="htl-cert" style="--at: 2019.83" data-reveal>
+                  <p class="htl-dates"><time datetime="2019-11">2019</time></p>
+                  <p class="htl-cert-name" data-i18n="cert.3.name">Red Hat Certified Architect (RHCA)</p>
+                  <p class="htl-org" data-i18n="cert.3.issuer">Red Hat</p>
+                </li>
+                <li class="htl-cert" style="--at: 2020.5" data-reveal>
+                  <p class="htl-dates"><time datetime="2020">2020</time></p>
+                  <p class="htl-cert-name" data-i18n="cert.4.name">CCNA CyberOps</p>
+                  <p class="htl-org" data-i18n="cert.4.issuer">Cisco</p>
+                </li>
+                <li class="htl-cert" style="--at: 2025.33" data-reveal>
+                  <p class="htl-dates"><time datetime="2025-05">2025</time></p>
+                  <p class="htl-cert-name" data-i18n="cert.5.name">Red Hat Academy Program Educator</p>
+                  <p class="htl-org" data-i18n="cert.5.issuer">Red Hat</p>
+                </li>
+                <li class="htl-cert" style="--at: 2026.5" data-reveal>
+                  <p class="htl-dates"><time datetime="2026-07">2026</time></p>
+                  <p class="htl-cert-name" data-i18n="cert.6.name">CISSP</p>
+                  <p class="htl-org" data-i18n="cert.6.issuer">ISC2</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <ul class="htl-legend" aria-hidden="true">
+            <li class="htl-legend-career" data-i18n="exp.lane.career">Career moves</li>
+            <li class="htl-legend-cert" data-i18n="exp.lane.certs">Selected certifications · full list on LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected work: circular portraits in an asymmetric constellation -->
+    <section class="section section--work" id="work" aria-labelledby="work-title">
+      <p class="ghost ghost--right" aria-hidden="true" data-i18n="work.ghost">Work</p>
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow" data-i18n="work.eyebrow">Projects</p>
+          <h2 id="work-title" data-i18n="work.title">Selected Work</h2>
+        </header>
+
+        <div class="constellation">
+          <svg class="orbit orbit--work" viewBox="0 0 1200 1400" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M-20 300 C 120 120, 330 180, 520 470 C 690 730, 920 520, 1220 330"/>
+            <path d="M-20 1120 C 200 880, 360 900, 560 1150 C 740 1370, 1000 1180, 1220 960"/>
+          </svg>
+
+          <ul class="work-grid" data-stagger>
+            <li>
+              <article class="work-card" data-reveal>
+                <div class="portrait-wrap">
+                  <div class="portrait portrait--ink"><svg class="portrait-icon" aria-hidden="true" focusable="false"><use href="#i-locked-shields"/></svg></div>
+                  <a class="satellite" href="https://ccdcoe.org/news/2021/sweden-scored-highest-at-the-cyber-defence-exercise-locked-shields-2021/" data-goatcounter-click="project-locked-shields" aria-labelledby="w1-view w1-title">
+                    <span class="sr-only" id="w1-view" data-i18n="work.view">View project</span>
+                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+                  </a>
+                </div>
+                <p class="eyebrow"><span data-i18n="work.1.tag1">Cyber Defence</span> · <span data-i18n="work.1.tag2">NATO</span></p>
+                <h3 class="card-title" id="w1-title" data-i18n="work.1.title">Locked Shields 2021</h3>
+                <p class="card-text" data-i18n="work.1.blurb">Defended Linux systems for the Czech Blue Team, led by NÚKIB, at NATO CCDCOE’s Locked Shields, the largest international live-fire cyber defence exercise: over 150 complex systems per team against thousands of simulated attacks. We finished third.</p>
+              </article>
+            </li>
+            <li>
+              <article class="work-card" data-reveal>
+                <div class="portrait-wrap">
+                  <div class="portrait portrait--lifted"><svg class="portrait-icon" aria-hidden="true" focusable="false"><use href="#i-ids"/></svg></div>
+                </div>
+                <p class="eyebrow"><span data-i18n="work.2.tag1">Detection</span> · <span data-i18n="work.2.tag2">OpenShift</span></p>
+                <h3 class="card-title" id="w2-title" data-i18n="work.2.title">IDS Rules on OpenShift</h3>
+                <p class="card-text" data-i18n="work.2.blurb">Migrated the IDS rule update workflow from a legacy VM to a containerized OpenShift CronJob with Helm and ArgoCD.</p>
+              </article>
+            </li>
+            <li>
+              <article class="work-card" data-reveal>
+                <div class="portrait-wrap">
+                  <div class="portrait portrait--warm"><svg class="portrait-icon" aria-hidden="true" focusable="false"><use href="#i-trend"/></svg></div>
+                </div>
+                <p class="eyebrow"><span data-i18n="work.3.tag1">Vulnerability Management</span> · <span data-i18n="work.3.tag2">Ansible</span></p>
+                <h3 class="card-title" id="w3-title" data-i18n="work.3.title">Vulnerability &amp; Patch Management</h3>
+                <p class="card-text" data-i18n="work.3.blurb">Took the team from reactive firefighting to a proactive program: risk-based triage with custom dashboards cut open remediation tasks from hundreds to dozens, and weekly security and monthly full patching on Ansible Automation Platform replaced a dreaded manual patching day.</p>
+              </article>
+            </li>
+            <li>
+              <article class="work-card" data-reveal>
+                <div class="portrait-wrap">
+                  <div class="portrait portrait--lifted"><svg class="portrait-icon" aria-hidden="true" focusable="false"><use href="#i-sync-db"/></svg></div>
+                </div>
+                <p class="eyebrow"><span data-i18n="work.4.tag1">Automation</span> · <span data-i18n="work.4.tag2">ServiceNow</span></p>
+                <h3 class="card-title" id="w4-title" data-i18n="work.4.title">Satellite &amp; ServiceNow CMDB Integration</h3>
+                <p class="card-text" data-i18n="work.4.blurb">Built a scalable integration between Satellite and ServiceNow to automatically keep CMDB inventory up to date, replacing tedious manual inventory maintenance and improving data quality for incident response and vulnerability management.</p>
+              </article>
+            </li>
+            <li>
+              <article class="work-card" data-reveal>
+                <div class="portrait-wrap">
+                  <div class="portrait portrait--warm"><svg class="portrait-icon" aria-hidden="true" focusable="false"><use href="#i-card"/></svg></div>
+                  <a class="satellite" href="./lanagrafica.html" aria-labelledby="w5-view w5-title">
+                    <span class="sr-only" id="w5-view" data-i18n="work.view">View project</span>
+                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+                  </a>
+                </div>
+                <p class="eyebrow"><span data-i18n="work.5.tag1">Side project</span> · <span data-i18n="work.5.tag2">Kubernetes</span></p>
+                <h3 class="card-title" id="w5-title" data-i18n="work.5.title">LANagrafica</h3>
+                <p class="card-text" data-i18n="work.5.blurb">A multi-tenant member registry for Italian non-profits: Spring Boot and React microservices on Azure AKS, deployed with Helm and ArgoCD, with secrets in Bitwarden, data in MongoDB Atlas, Auth0 for login and Grafana/Loki for observability.</p>
+              </article>
+            </li>
+            <li>
+              <article class="work-card" data-reveal>
+                <div class="portrait-wrap">
+                  <div class="portrait portrait--ink"><span class="portrait-glyph" aria-hidden="true">æ</span></div>
+                  <a class="satellite" href="https://www.instagram.com/togaether_anzio" data-goatcounter-click="project-togaether" aria-labelledby="w6-view w6-title">
+                    <span class="sr-only" id="w6-view" data-i18n="work.view">View project</span>
+                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+                  </a>
+                </div>
+                <p class="eyebrow"><span data-i18n="work.6.tag1">Co-founder</span> · <span data-i18n="work.6.tag2">Community</span></p>
+                <h3 class="card-title" id="w6-title" data-i18n="work.6.title">ToGæther</h3>
+                <p class="card-text" data-i18n="work.6.blurb">Co-founded a coworking and community space that fights remote-work isolation and helps local young people find their path, with free professional courses like Red Hat Academy, which I teach as a certified instructor.</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials: stadium cards in a horizontal track. Quotes stay in English in both languages. -->
+    <section class="section" id="words" aria-labelledby="words-title">
+      <div class="container">
+        <div class="words-head">
+          <header class="section-head" data-reveal>
+            <p class="eyebrow" data-i18n="words.eyebrow">Testimonials</p>
+            <h2 id="words-title" data-i18n="words.title">Kind Words</h2>
+          </header>
+          <div class="carousel-controls">
+            <button class="circle-btn carousel-prev" type="button" data-i18n-attr="aria-label:words.prev" aria-label="Previous">
+              <svg class="icon icon--flip" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+            </button>
+            <button class="circle-btn carousel-next" type="button" data-i18n-attr="aria-label:words.next" aria-label="Next">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <ul class="quote-track" tabindex="0" data-i18n-attr="aria-label:words.title" aria-label="Kind Words" data-stagger>
+          <li>
+            <figure class="quote-card" lang="en" data-reveal>
+              <span class="quote-glyph" aria-hidden="true">“</span>
+              <blockquote>
+                <p>I really appreciate how much you taught me when I first joined. Thanks for being such a patient mentor.</p>
+              </blockquote>
+              <figcaption>
+                <span class="quote-role">Security Infrastructure DevOps</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="quote-card" lang="en" data-reveal>
+              <span class="quote-glyph" aria-hidden="true">“</span>
+              <blockquote>
+                <p>Thank you for all the hard work and dedication you put into incident response… I am immensely grateful and proud of how you rise to every challenge.</p>
+              </blockquote>
+              <figcaption>
+                <span class="quote-role">ISIRT Manager</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="quote-card" lang="en" data-reveal>
+              <span class="quote-glyph" aria-hidden="true">“</span>
+              <blockquote>
+                <p>Being first to try something takes courage. The work with AAP you’ve succeeded at was what I envisaged a decade ago…</p>
+              </blockquote>
+              <figcaption>
+                <span class="quote-role">Vulnerability Management Manager</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="quote-card" lang="en" data-reveal>
+              <span class="quote-glyph" aria-hidden="true">“</span>
+              <blockquote>
+                <p>Davide is an excellent and reliable partner… who consistently anticipates needs, solves problems, and is always ready to give a hand wherever the team needs it.</p>
+              </blockquote>
+              <figcaption>
+                <span class="quote-role">CTI Analyst</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="quote-card" lang="en" data-reveal>
+              <span class="quote-glyph" aria-hidden="true">“</span>
+              <blockquote>
+                <p>He’s my point of reference when it comes to networking. Always eager to help and to go the extra mile to find and provide any necessary information for solving technical issues.</p>
+              </blockquote>
+              <figcaption>
+                <span class="quote-role">Support Engineer</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="quote-card" lang="en" data-reveal>
+              <span class="quote-glyph" aria-hidden="true">“</span>
+              <blockquote>
+                <p>…having a skilled system admin makes a real difference… His willingness to collaborate has greatly helped in identifying the root cause of a bug…</p>
+              </blockquote>
+              <figcaption>
+                <span class="quote-role">Storage SME</span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>
+          <p class="copyright" data-i18n="footer.copy">© 2026 Davide Fernando Bragalone. All rights reserved.</p>
+          <p class="copyright" data-i18n="footer.built">Built with Claude Code, following a spec-driven development (SDD) workflow.</p>
+          <p class="copyright" data-i18n="footer.privacy">Visits are counted anonymously with GoatCounter. No cookies, and no IP addresses or personal data are stored.</p>
+        </div>
+        <a class="footer-top" href="#top" data-i18n="nav.home">Back to top</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

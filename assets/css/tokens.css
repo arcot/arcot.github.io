@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Design tokens — warm editorial system, mirrors design_mastercar.md §2–§6.
+   style.css consumes these; it never hardcodes a color, font or duration.
+   ========================================================================== */
+
+:root {
+  /* Surface */
+  --c-canvas: #F3F0EE;       /* Canvas Cream — page background, never white */
+  --c-lifted: #FCFBFA;       /* Lifted Cream — paper laid on paper */
+  --c-white: #FFFFFF;        /* Nav pill, satellites, secondary buttons */
+  --c-ghost: #E8E2DA;        /* Cream-on-cream watermark headlines */
+
+  /* Text & ink */
+  --c-ink: #141413;          /* Ink Black — text, primary CTAs, footer */
+  --c-charcoal: #262627;
+  --c-slate: #696969;        /* Muted secondary text */
+  --c-taupe: #D1CDC7;        /* Whisper text / hairlines on cream */
+
+  /* Accent — used sparingly */
+  --c-signal: #CF4500;       /* Signal Orange — eyebrow dots only */
+  --c-orbit: #F37338;        /* Light Signal Orange — orbital arcs, active cues */
+  --c-link: #3860BE;         /* Link Blue — inline links */
+
+  /* Ink at fixed opacities */
+  --c-ink-10: rgba(20, 20, 19, 0.1);
+  --c-ink-50: rgba(20, 20, 19, 0.5);
+  --c-white-15: rgba(255, 255, 255, 0.15);
+  --c-white-40: rgba(255, 255, 255, 0.4);
+  --c-white-60: rgba(255, 255, 255, 0.6);
+
+  /* Typography — one family; contrast comes from scale, weight, tracking */
+  --font: "Sofia Sans", Arial, sans-serif;
+  --font-glyph: "Montserrat", var(--font); /* ToGæther "æ" portrait glyph only */
+  --w-body: 450;             /* load-bearing half-step weight */
+  --w-medium: 500;
+  --w-bold: 700;
+  --tracking-tight: -0.02em; /* all headlines */
+  --tracking-ui: -0.02em;    /* nav links, buttons */
+  --tracking-eyebrow: 0.04em;
+  --text-xs: 0.75rem;        /* 12 */
+  --text-sm: 0.875rem;       /* 14 — eyebrow, footer links */
+  --text-base: 1rem;         /* 16 — body, buttons */
+  --text-lg: 1.5rem;         /* 24 — H3 */
+  --text-xl: clamp(2rem, 4vw, 2.25rem);          /* 36 — H2 */
+  --text-hero: clamp(2.5rem, 6vw, 4rem);         /* 64 — H1 */
+  --text-ghost: clamp(4.5rem, 14vw, 10rem);      /* watermark */
+  --leading-display: 1;
+  --leading-title: 1.2;
+  --leading: 1.4;
+
+  /* Shape — small, 20–40, or full pill; nothing in between */
+  --radius-sm: 4px;
+  --radius-btn: 20px;
+  --radius-lg: 40px;
+  --radius-pill: 999px;
+  --border-btn: 1.5px;
+
+  /* Project portrait icons */
+  --portrait-icon: 0.36;       /* icon size as a fraction of the portrait diameter */
+
+  /* Elevation — atmospheric, never hard */
+  --shadow-1: 0 4px 24px 0 rgba(0, 0, 0, 0.04);
+  --shadow-2: 0 24px 48px 0 rgba(0, 0, 0, 0.08);
+
+  /* Motion */
+  --dur-fast: 200ms;
+  --dur-slow: 600ms;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --stagger-step: 90ms;
+
+  /* Space (8px base: 8 / 16 / 24 / 32 / 48 / 64 / 96 / 128) */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+  --measure: 80rem;          /* 1280 */
+  --measure-prose: 60ch;
+  --tap: 3rem;               /* 48px */
+  --nav-top: 1.5rem;         /* the pill floats, doesn't touch */
+  --nav-h: 4.5rem;
+
+  /* Horizontal timeline */
+  --htl-year: 5.5rem;        /* narrowest a year gets before the track scrolls */
+  --htl-axis: 1.5rem;        /* axis band: line + year ticks */
+  --htl-dot: 0.875rem;
+  --htl-cert-w: 10rem;
+  --htl-cert-drop: 5.5rem;   /* every other cert hangs lower so neighbours don't collide */
+
+  /* Roadmap track (project page) */
+  --roadmap-node: 3.5rem;
+  --roadmap-line: 1.5px;
+}
