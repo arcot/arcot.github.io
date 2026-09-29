@@ -21,7 +21,6 @@ export const translations = {
     "hero.eyebrow": "CyberSecurity Specialist · Networking · Automation",
     "hero.name": "Davide Fernando Bragalone",
     "hero.tagline": "Two decades in networking and security, and still curious about what comes next.",
-    "hero.cta": "Discover",
 
     "links.email": "Email",
     "links.linkedin": "LinkedIn",
@@ -185,7 +184,6 @@ export const translations = {
     "hero.eyebrow": "CyberSecurity Specialist · Networking · Automazione",
     "hero.name": "Davide Fernando Bragalone",
     "hero.tagline": "Vent'anni tra networking e sicurezza, e ancora tanta curiosità per quello che viene dopo.",
-    "hero.cta": "Scopri",
 
     "links.email": "Email",
     "links.linkedin": "LinkedIn",

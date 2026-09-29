@@ -22,7 +22,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,300..800;1,300..800&family=DM+Mono&display=swap">
   <!-- Montserrat only for the ToGæther "æ" portrait glyph, subset to that one character -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&text=%C3%A6&display=swap">
   <link rel="stylesheet" href="./assets/css/tokens.css">
@@ -131,20 +131,16 @@
           </ul>
         </div>
 
-        <div class="hero-visual">
-          <!-- Orbital arc around the portrait -->
-          <svg class="orbit orbit--hero" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
-            <path pathLength="1" d="M28 236 C 14 120, 110 22, 214 26 C 318 30, 392 118, 380 214 C 370 300, 300 372, 206 376"/>
-          </svg>
-          <div class="portrait-wrap">
-            <!-- Swap the monogram for <img src="…" alt="…"> to show a photo; it is cropped to the circle -->
-            <div class="portrait portrait--hero">
-              <span class="portrait-mono" data-i18n="nav.monogram" aria-hidden="true">DB</span>
-            </div>
-            <a class="satellite" href="#about" data-i18n-attr="aria-label:hero.cta" aria-label="Discover">
-              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
-            </a>
-          </div>
+        <!-- Decorative terminal, English in both languages. It restates the eyebrow and tagline, so screen readers skip it -->
+        <div class="term" lang="en" aria-hidden="true">
+          <div class="term-dots"><i></i><i></i><i></i></div>
+          <p><span class="term-prompt">$</span> whoami</p>
+          <p class="term-out">cybersecurity specialist</p>
+          <p><span class="term-prompt">$</span> cat focus.txt</p>
+          <p class="term-out">networking · security · automation</p>
+          <p><span class="term-prompt">$</span> uptime</p>
+          <p class="term-out">20+ years, load average: curious</p>
+          <p><span class="term-prompt">$</span> <span class="term-cursor"></span></p>
         </div>
       </div>
     </section>

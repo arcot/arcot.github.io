@@ -242,14 +242,10 @@ a {
   color: var(--c-signal);
 }
 
-.portrait-glyph,
-.portrait-mono {
+.portrait-glyph {
   font-weight: var(--w-medium);
   letter-spacing: var(--tracking-tight);
   line-height: 1;
-}
-
-.portrait-glyph {
   font-family: var(--font-glyph);
   font-size: calc(var(--d) * 0.5);
 }
@@ -609,14 +605,64 @@ a {
   --d: clamp(15rem, 34vw, 26rem);
 }
 
-.portrait-mono {
-  font-size: calc(var(--d) * 0.28);
-}
-
 .orbit--hero {
   inset: 0;
   width: 100%;
   height: 100%;
+}
+
+/* Ink terminal card beside the hero copy */
+.term {
+  width: 100%;
+  max-width: var(--term-w);
+  justify-self: center;
+  padding: var(--space-3) var(--space-4) var(--space-4);
+  border-radius: var(--radius-lg);
+  background: var(--c-ink);
+  color: var(--c-canvas);
+  box-shadow: var(--shadow-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  line-height: var(--leading-code);
+}
+
+.term p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.term-dots {
+  display: flex;
+  gap: var(--space-1);
+  margin-bottom: var(--space-2);
+}
+
+.term-dots i {
+  width: var(--term-dot);
+  height: var(--term-dot);
+  border-radius: 50%;
+  background: var(--c-white-40);
+}
+
+.term-dots i:first-child {
+  background: var(--c-orbit);
+}
+
+.term-prompt {
+  color: var(--c-orbit);
+}
+
+.term-out {
+  margin-bottom: var(--space-1);
+  color: var(--c-white-60);
+}
+
+.term-cursor {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.1em;
+  background: var(--c-canvas);
+  vertical-align: -0.2em;
 }
 
 /* ---------- About ---------- */
@@ -1169,7 +1215,8 @@ a {
   }
 
   .js .hero-copy > *,
-  .js .hero .portrait-wrap {
+  .js .hero .portrait-wrap,
+  .js .hero .term {
     animation: rise var(--dur-slow) var(--ease) both;
   }
 
@@ -1177,7 +1224,18 @@ a {
   .js .hero-copy > :nth-child(3) { animation-delay: 120ms; }
   .js .hero-copy > :nth-child(4) { animation-delay: 180ms; }
   .js .hero-copy > :nth-child(5) { animation-delay: 240ms; }
-  .js .hero .portrait-wrap { animation-delay: 150ms; }
+  .js .hero .portrait-wrap,
+  .js .hero .term { animation-delay: 150ms; }
+
+  .term-cursor {
+    animation: blink 1.1s steps(1) infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
 
   @keyframes rise {
     from {

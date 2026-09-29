@@ -31,6 +31,7 @@
   /* Typography — one family; contrast comes from scale, weight, tracking */
   --font: "Sofia Sans", Arial, sans-serif;
   --font-glyph: "Montserrat", var(--font); /* ToGæther "æ" portrait glyph only */
+  --font-mono: "DM Mono", ui-monospace, Menlo, monospace; /* hero terminal only */
   --w-body: 450;             /* load-bearing half-step weight */
   --w-medium: 500;
   --w-bold: 700;
@@ -47,6 +48,7 @@
   --leading-display: 1;
   --leading-title: 1.2;
   --leading: 1.4;
+  --leading-code: 1.7;
 
   /* Shape — small, 20–40, or full pill; nothing in between */
   --radius-sm: 4px;
@@ -82,6 +84,10 @@
   --tap: 3rem;               /* 48px */
   --nav-top: 1.5rem;         /* the pill floats, doesn't touch */
   --nav-h: 4.5rem;
+
+  /* Hero terminal */
+  --term-w: 30rem;
+  --term-dot: 0.625rem;
 
   /* Horizontal timeline */
   --htl-year: 5.5rem;        /* narrowest a year gets before the track scrolls */
