@@ -29,7 +29,7 @@ export const translations = {
     "about.eyebrow": "Who I am",
     "about.title": "About",
     "about.p1": "Ask my colleagues and they'll likely tell you the same thing: if you're stuck, call Davide. I'm a cybersecurity specialist based in Rome, and I've built my career on troubleshooting complex problems and designing systems that don't create them.",
-    "about.p2": "I'm restlessly curious. Once I'm confident with something, I move on to something new to master, roughly every two or three years. Security and networking stay at the center while the tools and stacks around them change. At the moment that means redesigning how our SOC detects threats and triages alerts.",
+    "about.p2": "I'm restlessly curious, and I learn fast. Once I've mastered a domain, I look for the next challenge that builds on it, usually within the same team or company. That's how I went from support engineering to security operations to incident response without leaving Red Hat. Security and networking are the constant; the tools and stacks around them keep evolving, and so do I. Right now, that means redesigning how our SOC detects threats and triages alerts.",
     "about.p3": "I love passing knowledge on, too. I coach people at work and teach students in my area, helping them build skills around their passions and stay in school. And when I log off, it's usually to log back in: online multiplayer games, always on a team.",
 
     "exp.eyebrow": "Path",
@@ -193,7 +193,7 @@ export const translations = {
     "about.eyebrow": "Chi sono",
     "about.title": "Su di me",
     "about.p1": "Chiedi ai miei colleghi e probabilmente ti diranno la stessa cosa: se sei bloccato, chiama Davide. Sono un cybersecurity specialist di base a Roma e ho costruito la mia carriera risolvendo problemi complessi e progettando sistemi che non ne creano.",
-    "about.p2": "Sono curioso per definizione. Una volta sicuro nel mio ruolo, mi appassiono a qualcosa di nuovo in cui specializzarmi, più o meno ogni due o tre anni. Sicurezza e networking restano al centro; attorno cambiano strumenti e tecnologie. In questo momento vuol dire riprogettare il modo in cui il nostro SOC rileva le minacce e gestisce gli alert.",
+    "about.p2": "Sono curioso di natura e imparo in fretta. Quando padroneggio un ambito, cerco una nuova sfida che parta da lì, di solito nello stesso team o nella stessa azienda. Così, senza mai lasciare Red Hat, sono passato dal supporto tecnico alle security operations e poi all'incident response. Sicurezza e networking sono la mia costante: gli strumenti cambiano, e io cresco con loro. Oggi questo significa riprogettare il modo in cui il nostro SOC rileva le minacce e fa il triage degli alert.",
     "about.p3": "Mi piace anche trasmettere quello che so: faccio da coach sul lavoro e insegno agli studenti del mio territorio, aiutandoli a costruire competenze attorno alle loro passioni e a non abbandonare la scuola. E quando stacco, di solito è per ricollegarmi: giochi multiplayer online, sempre in squadra.",
 
     "exp.eyebrow": "Percorso",
