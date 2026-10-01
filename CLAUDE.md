@@ -9,7 +9,7 @@ A static, single-page personal landing page (English + Italian) in plain HTML, C
 ## Workflow
 
 - Commit and push directly to `main`. This repo doesn't use pull/merge requests.
-- **The site is live.** GitHub Pages serves `main` (root) of the public `arcot/arcot.github.io` repo at https://arcot.github.io/, so every push to `main` goes live within minutes. The repo and its full history are public: never commit private material (`donotshare/` stays gitignored). Don't deploy the site anywhere else unless the owner asks.
+- **The site is live.** GitHub Pages serves `main` (root) of the public `arcot/arcot.github.io` repo at https://arcot.github.io/, so every push to `main` goes live within minutes. The repo and its full history are public: never commit private material (`donotshare/` stays gitignored). Subfolders of `donotshare/` may have their own `CLAUDE.md` describing private workflows; follow it when working there, and never move details from it into this file. Don't deploy the site anywhere else unless the owner asks.
 - Testimonials show only the author's role, not their name, until each author approves being named.
 
 ## Running locally
