@@ -24,6 +24,8 @@ export const translations = {
 
     "links.email": "Email",
     "links.linkedin": "LinkedIn",
+    "links.cv": "CV (PDF)",
+    "links.newTab": "(opens in a new tab)",
 
     "about.eyebrow": "Who I am",
     "about.title": "About",
@@ -187,6 +189,8 @@ export const translations = {
 
     "links.email": "Email",
     "links.linkedin": "LinkedIn",
+    "links.cv": "CV (PDF)",
+    "links.newTab": "(si apre in una nuova scheda)",
 
     "about.eyebrow": "Chi sono",
     "about.title": "Su di me",

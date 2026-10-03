@@ -588,10 +588,17 @@ a {
 
 .social-links {
   display: flex;
+  align-items: center;
   gap: 0.75rem;
   margin-top: var(--space-2);
   padding: 0;
   list-style: none;
+}
+
+/* Labelled CV pill, as tall as the circle buttons beside it */
+.social-cv {
+  min-height: var(--tap);
+  border-radius: var(--radius-pill);
 }
 
 .hero-visual {
