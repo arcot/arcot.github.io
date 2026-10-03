@@ -84,7 +84,7 @@ export const translations = {
     "work.2.tag2": "OpenShift",
 
     "work.3.title": "Vulnerability & Patch Management",
-    "work.3.blurb": "Took the team from reactive firefighting to a proactive program: risk-based triage with custom dashboards cut open remediation tasks from hundreds to dozens, and weekly security and monthly full patching on Ansible Automation Platform replaced a dreaded manual patching day.",
+    "work.3.blurb": "Took the team from reactive firefighting to a proactive program: risk-based triage processes cut open remediation tasks from hundreds to dozens, and weekly security patching with configuration enforcement on Ansible Automation Platform replaced a dreaded manual patching day.",
     "work.3.tag1": "Vulnerability Management",
     "work.3.tag2": "Ansible",
 
@@ -99,7 +99,7 @@ export const translations = {
     "work.5.tag2": "Kubernetes",
 
     "work.6.title": "ToGæther",
-    "work.6.blurb": "Co-founded a coworking and community space that fights remote-work isolation and helps local young people find their path, with free professional courses like Red Hat Academy, which I teach as a certified instructor.",
+    "work.6.blurb": "Co-founded a coworking and community space where local professionals give back to the area, with free courses and mentoring that help young people stay in school. I teach Red Hat Academy courses there.",
     "work.6.tag1": "Co-founder",
     "work.6.tag2": "Community",
 
@@ -249,7 +249,7 @@ export const translations = {
     "work.2.tag2": "OpenShift",
 
     "work.3.title": "Vulnerability & Patch Management",
-    "work.3.blurb": "Ho portato il team dalla rincorsa alle emergenze a un programma proattivo: il triage basato sul rischio con dashboard su misura ha ridotto le attività di remediation aperte da centinaia a decine, e i workflow settimanali di sicurezza e mensili completi su Ansible Automation Platform hanno sostituito una temuta giornata di patching manuale.",
+    "work.3.blurb": "Ho portato il team dalla rincorsa alle emergenze a un programma proattivo: processi di triage basati sul rischio hanno ridotto le attività di remediation aperte da centinaia a decine, e il patching di sicurezza settimanale con enforcement della configurazione su Ansible Automation Platform ha sostituito una temuta giornata di patching manuale.",
     "work.3.tag1": "Vulnerability Management",
     "work.3.tag2": "Ansible",
 
@@ -264,7 +264,7 @@ export const translations = {
     "work.5.tag2": "Kubernetes",
 
     "work.6.title": "ToGæther",
-    "work.6.blurb": "Ho cofondato uno spazio di coworking e di comunità che combatte l'isolamento del lavoro da remoto e aiuta i giovani del territorio a trovare la propria strada, con corsi professionali gratuiti come la Red Hat Academy, di cui sono docente certificato.",
+    "work.6.blurb": "Ho co-fondato uno spazio di coworking e comunità dove i professionisti del territorio restituiscono qualcosa alla zona, con corsi gratuiti e mentoring che aiutano i ragazzi a non abbandonare la scuola. Lì insegno i corsi Red Hat Academy.",
     "work.6.tag1": "Cofondatore",
     "work.6.tag2": "Community",
 
